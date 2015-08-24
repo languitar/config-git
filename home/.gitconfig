@@ -1,0 +1,29 @@
+[core]
+    excludesfile = ~/.gitignore_global
+[user]
+    name = Johannes Wienke
+    email = languitar@semipol.de
+[push]
+    default = current
+[color]
+	ui = auto
+[alias]
+    ci = commit
+    co = checkout
+    pullf = pull --ff-only
+    mergef = merge --no-ff --no-commit
+    stat = status
+    cp = cherry-pick
+    b = branch
+    graph = log --graph --oneline --all
+    pushf = push --force-with-lease
+[rebase]
+    autosquash = true
+[credential]
+#	helper = cache
+[merge]
+    tool = vim
+[merge "vim"]
+    cmd = "vim -d $LOCAL $BASE $REMOTE $MERGED"
+[include]
+    path = .gitlocal
