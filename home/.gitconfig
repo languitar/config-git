@@ -3,6 +3,8 @@
 [user]
     name = Johannes Wienke
     email = languitar@semipol.de
+[credential]
+    helper = !pass-git-helper $@
 [push]
     default = current
 [color]
