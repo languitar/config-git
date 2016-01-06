@@ -17,7 +17,7 @@
     stat = status
     cp = cherry-pick
     b = branch
-    graph = log --graph --oneline --all
+    graph = log --pretty=format:'%C(auto)%h (%G?) %C(green)[%an]%C(auto)%d%Creset %s' --date=short --graph --decorate --full-history --all
     pushf = push --force-with-lease
 [rebase]
     autosquash = true
