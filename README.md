@@ -1,4 +1,4 @@
-# Dotfiles: bash configuration
+# Dotfiles: git configuration
 
 My config for [git](https://git-scm.com/) which I manage via [homeshick](https://github.com/andsens/homeshick).
 
