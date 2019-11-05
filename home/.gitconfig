@@ -8,7 +8,7 @@
 [push]
     default = current
 [color]
-	ui = auto
+    ui = auto
 [alias]
     ci = commit
     co = checkout
@@ -22,7 +22,7 @@
 [rebase]
     autosquash = true
 [credential]
-#	helper = cache
+#   helper = cache
 [merge]
     tool = vim
 [merge "vim"]
