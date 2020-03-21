@@ -19,13 +19,15 @@
     b = branch
     graph = log --pretty=format:'%C(auto)%h %cd (%G?) %C(green)[%an]%C(auto)%d%Creset %s' --date=short --graph --decorate --full-history --all
     pushf = push --force-with-lease
+    conflicted = !vim +Conflicted
 [rebase]
     autosquash = true
 [credential]
 #   helper = cache
 [merge]
-    tool = vim
-[merge "vim"]
-    cmd = "vim -d $LOCAL $BASE $REMOTE $MERGED"
+    tool = nvim
+    conflictstyle = diff3
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
 [include]
     path = .gitlocal
