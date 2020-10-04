@@ -29,10 +29,12 @@
     conflictstyle = diff3
 [mergetool "nvim"]
   cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
-[include]
-    path = .gitlocal
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
     clean = git-lfs clean -- %f
+[pull]
+	rebase = true
+[include]
+    path = .gitlocal
