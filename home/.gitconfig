@@ -35,6 +35,6 @@
     required = true
     clean = git-lfs clean -- %f
 [pull]
-	rebase = true
+    rebase = true
 [include]
     path = .gitlocal
