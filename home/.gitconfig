@@ -12,7 +12,6 @@
 [alias]
     ci = commit
     co = checkout
-    pullf = pull --ff-only
     mergef = merge --no-ff --no-commit
     stat = status
     cp = cherry-pick
